@@ -1,0 +1,28 @@
+<template>
+	<lightning-card title="Demo Async">
+		<lightning-input type="toggle" label="A" checked={stoppedA} message-toggle-active="Stopped" message-toggle-inactive="Waiting..." onchange={handleChangeA}> </lightning-input
+		>
+		<lightning-input type="toggle" label="B" checked={stoppedB} message-toggle-active="Stopped" message-toggle-inactive="Waiting..." onchange={handleChangeB}></lightning-input
+		>
+		<lightning-input type="toggle" label="C" checked={stoppedC} message-toggle-active="Stopped" message-toggle-inactive="Waiting..." onchange={handleChangeC}></lightning-input
+		>
+		<br />
+		<lightning-button label="Fail" onclick={fail}></lightning-button>
+		<lightning-button label="Reset" onclick={reset}></lightning-button>
+		<hr></hr>
+		<h1>Parallel</h1>
+		<lightning-button label="Callback" onclick={callback}></lightning-button>
+		<lightning-button label="Promises" onclick={promises}></lightning-button>
+		<lightning-button label="Async/Await" disabled></lightning-button><br/>
+		<hr></hr>
+		<h1>After all in any order...</h1>
+		<lightning-button label="Callback" disabled></lightning-button>
+		<lightning-button label="Promises" onclick={promisesAll}></lightning-button>
+		<lightning-button label="Async/Await" disabled></lightning-button><br/>
+		<hr></hr>
+		<h1>Serial</h1>
+		<lightning-button label="Callback" onclick={callbackSerial}></lightning-button>
+		<lightning-button label="Promises" onclick={promisesSerial}></lightning-button>
+		<lightning-button label="Async/Await" onclick={asyncAwait}></lightning-button><br/>
+	</lightning-card>
+</template>
