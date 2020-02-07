@@ -1,0 +1,274 @@
+[
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1581103186749,
+            "changeTime": 1581103186749,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1581103186749,
+            "changeTime": 1581103186749,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default",
+            "isDirectory": true,
+            "size": 256,
+            "modifiedTime": 1581104758463,
+            "changeTime": 1581104758463,
+            "contentHash": "605f07c15ab90b9e7b3e271c72eb055bb46d6de8",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc",
+            "isDirectory": true,
+            "size": 192,
+            "modifiedTime": 1581113779550,
+            "changeTime": 1581113779550,
+            "contentHash": "a952a6adb69d9879fb011a39678255f6e8979f2c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync",
+            "isDirectory": true,
+            "size": 160,
+            "modifiedTime": 1581018761000,
+            "changeTime": 1581103373950,
+            "contentHash": "2c54df0a15ad9f2e820539f11a43fd6d2df13136",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync/demoAsync.html",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync/demoAsync.html",
+            "isDirectory": false,
+            "size": 2282,
+            "modifiedTime": 1581113523549,
+            "changeTime": 1581113523549,
+            "contentHash": "62985e64a4092631d8f35faf6eeccc230da2f24e",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync/demoAsync.js",
+        {
+            "state": "u",
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync/demoAsync.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 4988,
+            "modifiedTime": 1581113986096,
+            "changeTime": 1581113986096,
+            "isWorkspace": false,
+            "contentHash": "376989cee4ebaa23f49ddb12131f53e138952fd8"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync/demoAsync.js-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/lwc/demoAsync/demoAsync.js-meta.xml",
+            "isDirectory": false,
+            "size": 268,
+            "modifiedTime": 1581025213000,
+            "changeTime": 1581103373945,
+            "contentHash": "d8f3e4ad5b191b8520a786956d63508163be2d86",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS",
+            "isDirectory": true,
+            "size": 416,
+            "modifiedTime": 1581105441488,
+            "changeTime": 1581105441488,
+            "contentHash": "d24243e00f2fce2741ad45417adb3fea4ba8ebfb",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": true
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/flexipages/Async_JS_UtilityBar.flexipage-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/flexipages/Async_JS_UtilityBar.flexipage-meta.xml",
+            "isDirectory": false,
+            "size": 503,
+            "modifiedTime": 1581104758447,
+            "changeTime": 1581104758447,
+            "contentHash": "801428cde8b73ede431be885ad2a5f103c547b08",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/flexipages/Demo.flexipage-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/flexipages/Demo.flexipage-meta.xml",
+            "isDirectory": false,
+            "size": 702,
+            "modifiedTime": 1581104758451,
+            "changeTime": 1581104758451,
+            "contentHash": "316227ce093f8e435c3ab4a74fe11c7194bceb78",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/tabs/Demo.tab-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/tabs/Demo.tab-meta.xml",
+            "isDirectory": false,
+            "size": 266,
+            "modifiedTime": 1581104758454,
+            "changeTime": 1581104758454,
+            "contentHash": "68e2c0f8e01f635ff589bf3dbef80bdb896b37ad",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/applications/AsyncJS.app-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/applications/AsyncJS.app-meta.xml",
+            "isDirectory": false,
+            "size": 625,
+            "modifiedTime": 1581104758457,
+            "changeTime": 1581104758457,
+            "contentHash": "e1c9eea9fc83d67a4942e95b87a88ee54214add6",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/permissionsets/AsyncJS.permissionset-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/permissionsets/AsyncJS.permissionset-meta.xml",
+            "isDirectory": false,
+            "size": 442,
+            "modifiedTime": 1581105166766,
+            "changeTime": 1581105166766,
+            "contentHash": "000eaf6f6e3ab9596ca9e2b94c3fd40f629c7651",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml",
+            "isDirectory": false,
+            "size": 1997,
+            "modifiedTime": 1581104758464,
+            "changeTime": 1581104758464,
+            "contentHash": "f5a9a79b0a51379be4e1ff690518debaff33ecc2",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/flexipages",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/flexipages",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1581104758450,
+            "changeTime": 1581104758450,
+            "contentHash": "bc7ab23383d134afa2eb5cd1bb0277c6bdac1fbd",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/tabs",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/tabs",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1581104758454,
+            "changeTime": 1581104758454,
+            "contentHash": "27e8f7b485188049a8ccb6bc0edc3694c6635ab6",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/applications",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/applications",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1581104758457,
+            "changeTime": 1581104758457,
+            "contentHash": "1ea3bda383b253e4d2ba974abe33872fa3c00583",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/permissionsets",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/permissionsets",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1581104758460,
+            "changeTime": 1581104758460,
+            "contentHash": "ce6f149d8382dd702976914d5cd5040c3cfb9684",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/appMenus",
+        {
+            "sourcePath": "/Users/aperez/C1MW1077J1WV-2/Projects/2020/01-JAN/AsyncJS/force-app/main/default/appMenus",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1581104758464,
+            "changeTime": 1581104758464,
+            "contentHash": "7c65d70563206b380e20367663fe2cc611131a2d",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ]
+]

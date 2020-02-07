@@ -9,6 +9,7 @@ export default class DemoAsync extends LightningElement {
 	@track stoppedC = false;
 	@track failed = false;
 
+	// Toggles
 	handleChangeA(event) {
 		this.stoppedA = event.target.checked;
 	}
@@ -19,6 +20,7 @@ export default class DemoAsync extends LightningElement {
 		this.stoppedC = event.target.checked;
 	}
 
+	// Buttons
 	fail() {
 		this.failed = true;
 	}
@@ -30,7 +32,8 @@ export default class DemoAsync extends LightningElement {
 		this.failed = false;
 	}
 
-	callback() {
+	// Any Order
+	anyOrderCallback() {
 		this.reset();
 		console.log("Callback started");
 		this.waitForToggleCallback("A", (whichOne, success) => {
@@ -43,7 +46,7 @@ export default class DemoAsync extends LightningElement {
 			console.log(`${whichOne} completed: Success? ${success}`);
 		});
 	}
-	promises() {
+	anyOrderPromises() {
 		this.reset();
 		console.log("Promises started");
 		this.waitForTogglePromise("A")
@@ -68,7 +71,48 @@ export default class DemoAsync extends LightningElement {
 				console.log(`${whichOne} completed: Success? FALSE`);
 			});
 	}
-	async asyncAwait() {
+
+	// Serial
+	serialCallback() {
+		this.reset();
+		console.log("Callback serial");
+		this.waitForToggleCallback("A", (whichOne1, success1) => {
+			console.log(`${whichOne1} completed: Success? ${success1}`);
+			this.stoppedB = false;
+			this.stoppedC = false;
+			this.waitForToggleCallback("B", (whichOne2, success2) => {
+				console.log(`${whichOne2} completed: Success? ${success2}`);
+				this.stoppedC = false;
+				this.waitForToggleCallback("C", (whichOne3, success3) => {
+					console.log(`${whichOne3} completed: Success? ${success3}`);
+				});
+			});
+		});
+	}
+	serialPromises() {
+		this.reset();
+		console.log("Promises serial");
+
+		this.waitForTogglePromise("A")
+			.then(whichOne => {
+				console.log(`${whichOne} completed: Success? TRUE`);
+				this.stoppedB = false;
+				this.stoppedC = false;
+				return this.waitForTogglePromise("B");
+			})
+			.then(whichOne => {
+				console.log(`${whichOne} completed: Success? TRUE`);
+				this.stoppedC = false;
+				return this.waitForTogglePromise("C");
+			})
+			.then(whichOne => {
+				console.log(`${whichOne} completed: Success? TRUE`);
+			})
+			.catch(whichOne => {
+				console.log(`${whichOne} completed: Success? FALSE`);
+			});
+	}
+	async serialAsyncAwait() {
 		this.reset();
 		console.log("Async/Await started");
 
@@ -76,15 +120,20 @@ export default class DemoAsync extends LightningElement {
 		try {
 			whichOne = await this.waitForTogglePromise("A");
 			console.log(`${whichOne} completed: Success? TRUE`);
+			this.stoppedB = false;
+			this.stoppedC = false;
 			whichOne = await this.waitForTogglePromise("B");
 			console.log(`${whichOne} completed: Success? TRUE`);
+			this.stoppedC = false;
 			whichOne = await this.waitForTogglePromise("C");
 			console.log(`${whichOne} completed: Success? TRUE`);
 		} catch (ex) {
 			console.log("Error", ex);
 		}
 	}
-	promisesAll() {
+
+	// After All
+	afterAllPromises() {
 		this.reset();
 		console.log("All, any order");
 		let promises = [];
@@ -95,40 +144,8 @@ export default class DemoAsync extends LightningElement {
 			console.log(`${JSON.stringify(values)} completed: Success? TRUE`);
 		});
 	}
-	callbackSerial() {
-		this.reset();
-		console.log("Callback serial");
-		this.waitForToggleCallback("A", (whichOne1, success1) => {
-			console.log(`${whichOne1} completed: Success? ${success1}`);
-			this.waitForToggleCallback("B", (whichOne2, success2) => {
-				console.log(`${whichOne2} completed: Success? ${success2}`);
-				this.waitForToggleCallback("C", (whichOne3, success3) => {
-					console.log(`${whichOne3} completed: Success? ${success3}`);
-				});
-			});
-		});
-	}
-	promisesSerial() {
-		this.reset();
-		console.log("Promises serial");
 
-		this.waitForTogglePromise("A")
-			.then(whichOne => {
-				console.log(`${whichOne} completed: Success? TRUE`);
-				return this.waitForTogglePromise("B");
-			})
-			.then(whichOne => {
-				console.log(`${whichOne} completed: Success? TRUE`);
-				return this.waitForTogglePromise("C");
-			})
-			.then(whichOne => {
-				console.log(`${whichOne} completed: Success? TRUE`);
-			})
-			.catch(whichOne => {
-				console.log(`${whichOne} completed: Success? FALSE`);
-			});
-	}
-
+	// Helper functions
 	waitForToggleCallback(whichOne, callback) {
 		const timer = setInterval(() => {
 			const status = this.checkStatus(whichOne);

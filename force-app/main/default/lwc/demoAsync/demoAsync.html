@@ -1,28 +1,64 @@
 <template>
 	<lightning-card title="Demo Async">
-		<lightning-input type="toggle" label="A" checked={stoppedA} message-toggle-active="Stopped" message-toggle-inactive="Waiting..." onchange={handleChangeA}> </lightning-input
-		>
-		<lightning-input type="toggle" label="B" checked={stoppedB} message-toggle-active="Stopped" message-toggle-inactive="Waiting..." onchange={handleChangeB}></lightning-input
-		>
-		<lightning-input type="toggle" label="C" checked={stoppedC} message-toggle-active="Stopped" message-toggle-inactive="Waiting..." onchange={handleChangeC}></lightning-input
-		>
-		<br />
-		<lightning-button label="Fail" onclick={fail}></lightning-button>
-		<lightning-button label="Reset" onclick={reset}></lightning-button>
-		<hr></hr>
-		<h1>Parallel</h1>
-		<lightning-button label="Callback" onclick={callback}></lightning-button>
-		<lightning-button label="Promises" onclick={promises}></lightning-button>
-		<lightning-button label="Async/Await" disabled></lightning-button><br/>
-		<hr></hr>
-		<h1>After all in any order...</h1>
-		<lightning-button label="Callback" disabled></lightning-button>
-		<lightning-button label="Promises" onclick={promisesAll}></lightning-button>
-		<lightning-button label="Async/Await" disabled></lightning-button><br/>
-		<hr></hr>
-		<h1>Serial</h1>
-		<lightning-button label="Callback" onclick={callbackSerial}></lightning-button>
-		<lightning-button label="Promises" onclick={promisesSerial}></lightning-button>
-		<lightning-button label="Async/Await" onclick={asyncAwait}></lightning-button><br/>
+		<div slot="actions">
+			<lightning-button label="Fail" onclick={fail}></lightning-button>
+			<lightning-button label="Reset" onclick={reset}></lightning-button>
+		</div>
+		<lightning-layout multiple-rows="true">
+			<lightning-layout-item size="4" class="slds-align_absolute-center">
+				<lightning-input
+					type="toggle"
+					label="Stop&nbsp;A"
+					checked={stoppedA}
+					onchange={handleChangeA}
+					message-toggle-active="Stopped"
+					message-toggle-inactive="Running"
+				></lightning-input>
+			</lightning-layout-item>
+			<lightning-layout-item size="4" class="slds-align_absolute-center">
+				<lightning-input
+					type="toggle"
+					label="Stop&nbsp;B"
+					checked={stoppedB}
+					onchange={handleChangeB}
+					message-toggle-active="Stopped"
+					message-toggle-inactive="Running"
+				></lightning-input>
+			</lightning-layout-item>
+			<lightning-layout-item size="4" class="slds-align_absolute-center">
+				<lightning-input
+					type="toggle"
+					label="Stop&nbsp;C"
+					checked={stoppedC}
+					onchange={handleChangeC}
+					message-toggle-active="Stopped"
+					message-toggle-inactive="Running"
+				></lightning-input>
+			</lightning-layout-item>
+		</lightning-layout>
+	</lightning-card>
+	<br />
+	<lightning-card title="Any Order">
+		<div slot="actions">
+			<lightning-button label="Callback" onclick={anyOrderCallback}></lightning-button>
+			<lightning-button label="Promises" onclick={anyOrderPromises}></lightning-button>
+			<lightning-button label="Async/Await" disabled></lightning-button>
+		</div>
+	</lightning-card>
+	<br />
+	<lightning-card title="Serial">
+		<div slot="actions">
+			<lightning-button label="Callback" onclick={serialCallback}></lightning-button>
+			<lightning-button label="Promises" onclick={serialPromises}></lightning-button>
+			<lightning-button label="Async/Await" onclick={serialAsyncAwait}></lightning-button><br />
+		</div>
+	</lightning-card>
+	<br />
+	<lightning-card title="After All...">
+		<div slot="actions">
+			<lightning-button label="Callback" disabled></lightning-button>
+			<lightning-button label="Promises" onclick={afterAllPromises}></lightning-button>
+			<lightning-button label="Async/Await" disabled></lightning-button><br />
+		</div>
 	</lightning-card>
 </template>
