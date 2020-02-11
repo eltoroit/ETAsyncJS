@@ -1,6 +1,8 @@
 # Asynchronous JavaScript using Salesforce Lightning Web Components (LWC)
 
-![enter image description here](https://github.com/eltoroit/ETAsyncJS/blob/blog/@ELTOROIT/blog/HeaderImage.png?raw=true)
+<p align="center">
+	<img src="https://github.com/eltoroit/ETAsyncJS/blob/blog/@ELTOROIT/blog/HeaderImage.png?raw=true" alt="Asynchronous JavaScript using Salesforce Lightning Web Components (LWC)">
+</p>
 
 This week I was teaching [a class on LWC](https://trailhead.salesforce.com/en/academy/classes/dex602-programming-lightning-web-components/) in Chicago, IL and the students asked me about asynchronous JavaScript. Being such an important topic, I built a simple demo that I have cleaned a bit to explains the different ways to work with Asynchronous JavaScript from LWC.
 
@@ -8,8 +10,9 @@ This is the idea behind this simple demo: We have three operations (A, B, C) whi
 
 I have created a repo for this SFDX project with the LWC code ([click here to view it](https://github.com/eltoroit/ETAsyncJS))
 
-[![enter image description here](https://github.com/eltoroit/ETAsyncJS/blob/blog/@ELTOROIT/blog/RepoLink.png?raw=true)
-](https://github.com/eltoroit/ETAsyncJS)
+<p align="center">
+	<a href="https://github.com/eltoroit/ETAsyncJS"><img src="https://github.com/eltoroit/ETAsyncJS/blob/blog/@ELTOROIT/blog/RepoLink.png?raw=true" alt="Visit Repo"></a>
+</p>
 
 The operations can be done in three different scenarios:
 
